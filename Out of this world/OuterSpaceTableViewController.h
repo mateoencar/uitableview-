@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OuterSpaceTableViewController : UITableViewController
+@interface OuterSpaceTableViewController : UITableViewController < UITableViewDataSource, UITableViewDelegate >
+
+@property (strong, nonatomic) NSMutableArray *planets; 
 
 @end
